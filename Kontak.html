@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">   
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>  
+</head>
+<body>
+    <!-- Navigasi-->
+    <header class="nav-scroll fixed-top mh-xss-mobile-nav">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                    <a href="index.html"><img src="images/Logo Kecamatan2.png" " alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Berita</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Profil.html">Profil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Layanan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-btn" href="Kontak.html">Kontak</a>
+                        </li>                            
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Form-->
+    <div class="wrapper">
+      <h2>Kontak Kami!</h2>
+      <div id="error_message"></div>
+      <form id="myform" onsubmit="return validate();">
+        <div class="input_field">
+            <input type="text" placeholder="Nama" id="name">
+        </div>
+        <div class="input_field">
+            <input type="text" placeholder="Subjek" id="subject">
+        </div>
+        <div class="input_field">
+            <input type="text" placeholder="Telepon" id="phone">
+        </div>
+        <div class="input_field">
+            <input type="text" placeholder="Email" id="email">
+        </div>
+        <div class="input_field">
+            <textarea placeholder="Pesan" id="message"></textarea>
+        </div>
+        <div class="btn">
+            <input type="submit">
+        </div>
+      </form>
+    </div>
